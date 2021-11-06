@@ -1,0 +1,118 @@
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.first-color{
+background: blue;
+height: 50px;
+}
+
+.second-color{
+    background: red;
+    height: 50px;
+}
+
+.third-color{
+ background: green;
+height: 50px;
+}
+
+.first-flag, .second-flag{
+  width: 300px;
+ margin: 15px auto;
+}
+
+
+.float{
+    float:left;
+    width: 100px;
+}
+
+.row1{
+      height: 50px;
+}
+
+
+.row2{
+    background: yellow;
+    height: 50px;
+}
+
+
+.row3{
+    height: 50px;
+}
+
+
+.row3 .float{
+    width: 150px;
+        
+}
+
+
+.four-color{
+    background: grey;
+    height: 50px;
+}
+
+.five-color{
+ background: black;
+ height: 50px;
+}
+
+    
+.six-color{
+    height: 100px;
+    width: 100px;
+    background: red;
+    margin:15px ;
+
+}
+
+.seven-color{
+    height: 100px;
+    width: 100px;
+    background:rgb(44, 44, 19);
+    margin:15px ;
+}
+
+.eight-color{
+    height: 100px;
+    width: 100px;
+    background:blue;
+    margin:15px ;
+
+}
+
+.third-flag{
+    background: #254845;
+    width: 400px;
+    height: 200px;
+    margin-top: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

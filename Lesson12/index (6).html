@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 12. Form</title>
+    <link rel="stylesheet" href="main (7).css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('user_W9f5QDUrcLpqnND1u4Uof');
+        })();
+    </script>
+    <script type="text/javascript">
+      window.onload = function() {
+          document.getElementById('contact-form').addEventListener('submit', function(event) {
+              event.preventDefault();
+              this.contact_number.value = Math.random() * 100000 | 0;
+              emailjs.sendForm('service_4j8eorg', 'template_ia31omu', this)
+                  .then(function() {
+                      console.log('SUCCESS!');
+                  }, function(error) {
+                      console.log('FAILED...', error);
+                  });
+          });
+      }
+    </script>
+</head>
+<body>
+<main class="panel">
+  <div class="panel__half half--first">
+    <h2>Contact us</h2>
+    <div class="links">
+      <a href="#">f</a>
+      <a href="#">t</a>
+      <a href="#">in</a>
+    </div>
+    <p>or use our contact form below</p>
+    <form class="input" id="contact-form">
+      <input type="hidden" name="contact_number">
+      <input type="text" placeholder="Email" name="mail" />
+      <input type="tel" id="phone" name="phone" placeholder="Phone"
+      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+      required />
+      <p>Type your message here:</p>
+      <textarea id="story" name="message"
+          rows="5" cols="33">
+      </textarea>
+    </form>
+    <a href="#">Need additional help?</a>
+
+    <button class="btn-contact">Contact me</button>
+  </div>
+  <div class="panel__half half--second">
+    <h2>Hello, User!</h2>
+    <p>If you want to know more info about our project than</p>
+    <button>
+      <i class="fas fa-long-arrow-alt-left"></i>
+    </button>
+  </div>
+</main>
+</body>
+</html>
